@@ -1,0 +1,460 @@
+body{-webkit-text-size-adjust: 100%;}
+.info-page .list .in{padding: 0 15px;}
+.whay-page .list li{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 15px;
+}
+@media (max-width: 1000px){
+	.info-page .bg br,
+	.info-page .list .in br,
+	.whay-page .list li br{display:none;}
+}
+@media (max-width: 800px){
+	.main-page h1 .title{
+		font-size: 100px;		line-height: 110px;
+	}
+}
+@media (max-width: 768px) {
+	#header{padding: 60px 60px 52px 60px;}
+	#header .logo{margin: 2px 0 0 1px;}
+	.main-page h1{
+		font-size: 38px;		line-height: 46px;
+		margin: 0 0 40px;
+	}
+	.main-page h1 .title{
+		font-size: 87px;		line-height: 88px;
+	}
+	.main-page{
+		font-size: 23px;		line-height: 27px;
+		padding: 0 0 70px;
+	}
+	.main-page .main-logo{
+		width: 428px;
+		height: 114px;
+		margin: 54px auto 93px;
+	}
+	.main-page p{margin: 0 0 14px;}
+	.main-page .clock-holder{padding: 58px 0 0;}
+	.main-page .list-clock{
+		width: 590px;
+		margin: 0 auto 93px;
+	}
+	.main-page .list-clock li{
+		height: 112px;
+		width: 145px;
+		margin: 0 0 0 3px;
+	}
+	.main-page .list-clock span{
+		font-size: 80px;		line-height: 80px;
+		padding: 24px 23px 0;
+	}
+	.main-page .clock-holder .text{margin: 0 0 17px;}
+	.main-page .list-clock span:after,
+	.main-page .list-clock span:before{
+		top: 59px;
+		left: 20px;
+		width: 44px;
+	}
+	.main-page .list-clock span:before{
+		left: auto;
+		right: 20px;
+	}
+	.main-page .holder-link .request-link{
+		width: 428px;
+		height: 85px;
+		font: 25px/82px 'Conv_gotham-pro-medium', arial, helvetica, sans-serif;
+	}
+	.main-page .holder-download .link-download{font: 17px/22px 'Conv_gotham-pro-medium', arial, helvetica, sans-serif;}
+	.main-page .holder-download .link-download .fa{font-size: 22px;}
+	.main-page .holder-link{margin: 0 0 75px;}
+	.info-page .bg{
+		padding: 40px 60px 50px;
+		margin: 0 0 41px;
+	}
+	.info-page h2{
+		font-size: 87px;		line-height: 90px;
+		margin: 0 0 41px;
+	}
+	.info-page{
+		font-size: 23px;		line-height: 28px;
+		padding: 240px 0 0 0;
+	}
+	.info-page p{margin: 0 0 9px;}
+	.info-page h3{
+		font-size: 28px;		line-height: 30px;
+		margin: 0 0 45px;
+	}
+	.info-page .list{
+		font-size: 30px;		line-height: 36px;
+		padding: 0;
+	}
+	.info-page .list li{
+		width:100%;
+		padding: 0 93px;
+		margin: 0 0 70px;
+	}
+	.info-page .list .in{
+		height: 311px;
+		padding: 0 80px;
+	}
+	.toogle-menu{display:block;}
+	.hold-toogle{
+		display:block; 
+		float:left;
+	}
+	.active-menu{
+		display:block;
+		font-size: 36px;		line-height: 40px;
+		top: 47px;
+		right: 57px;
+		width: 70%;
+		overflow:hidden;
+		white-space: nowrap;
+		text-align: right;
+		text-overflow: ellipsis;
+	}
+	#nav,
+	#nav.fixed-header {
+		padding: 44px 50px 41px;
+		-webkit-transition: top .2s ease-in-out;		-moz-transition: top .2s ease-in-out;		transition: position .2s ease-in-out;
+	}
+	#nav:after {		content:'';		display:block;		clear:both;	}
+	#nav.open{
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 1000;
+	}
+	#nav .menu{
+		position: fixed;
+		top: 131px;
+		bottom: 0;
+		right: -100%;
+		width: 100%;
+		overflow: auto;
+		background: rgba( 0, 0, 0, 0.81);
+		-webkit-transition: right .2s ease-in-out;		-moz-transition: right .2s ease-in-out;		transition: right .2s ease-in-out;
+		z-index: 1002;
+	}
+	#nav.open .menu{right: 0;}
+	#nav .menu li{
+		display:block;
+		text-align: right;
+		font-size: 36px;		line-height: 42px;
+		padding: 0 54px 0 15px;
+	}
+	#nav .menu li.active{display:none;}
+	#nav .menu li a{
+		display:block;
+		padding: 34px 5px;
+	}
+	.whay-page h4{
+		font-size: 66px;		line-height: 79px;
+		margin: 0 0 46px;
+	}
+	.whay-page .list li{
+		width:100%;
+		margin: 0 0 69px;
+	}
+	.whay-page .list>li:last-child{margin: 0 0 38px;}
+	.whay-page .figure {
+		height: 146px;
+		margin: 0 0 4px;
+	}
+	.whay-page .figure img{
+		display:block;
+		height: 100%;;
+		width: auto;
+		margin: 0 auto;
+	} 
+	.whay-page .list .title{
+		font-size: 34px;		line-height: 40px;
+		margin: 0 0 42px;
+	}
+	.whay-page .list{
+		font-size: 23px;		line-height: 33px;
+	}
+	.strategy-page .holder{
+		padding: 58px 140px 0 122px;
+	}
+	.strategy-page h5{
+		font-size: 47px;		line-height: 57px;
+		text-align: left;
+		margin: 0 0 55px;
+	}
+	.strategy-page .holder-box .box,
+	.strategy-page .holder-box .box:first-child{
+		width:100%;
+		padding: 0;
+		margin: 0 0 62px;
+	}
+	.strategy-page .holder-box .box:first-child{margin: 0 0 72px;}
+	.strategy-page .title{
+		font-size: 42px;		line-height: 46px;
+		margin: 0 0 6px;
+	}
+	.strategy-page h6 {
+		font-size: 68px;		line-height: 83px;
+		margin: 0 0 18px;
+	}
+	.strategy-page h6 br{display:none;}
+	.strategy-page .holder-box .box{
+		font-size: 23px;		line-height: 32px;
+	}
+}
+@media (max-width: 700px){
+	#header{padding: 25px 25px 0 25px;}
+	.main-page .main-logo{
+		width: 320px;
+		height: 85px;
+		margin: 30px auto;
+	}
+	.main-page h1 {
+		font-size: 34px;		line-height: 42px;
+	}
+	.main-page h1 .title{
+		font-size: 60px;		line-height: 68px;
+	}
+	.strategy-page h5,
+	.strategy-page h6{
+		font-size: 40px;
+		line-height: 46px;
+		margin: 0 0 30px;
+	}
+	.strategy-page .title{
+		font-size: 25px;
+		line-height: 30px;
+	}
+	.main-page,
+	.whay-page .list,
+	.info-page,
+	.strategy-page .holder-box .box{
+		font-size: 20px;
+		line-height: 25px;
+	}
+	#nav, #nav.fixed-header{
+		padding: 25px 50px;
+	}
+	.active-menu,
+	#nav .menu li{
+		font-size: 24px;		line-height: 26px;
+		margin: 0;
+	}
+	.active-menu{top: 35px;}
+	#nav .menu{
+		top: 96px;
+		padding-top: 20px;
+	}
+	#nav .menu li a{padding: 20px 5px;}
+	.main-page{padding-bottom: 40px;}
+	.main-page .clock-holder{padding: 20px 0 0;}
+	.main-page .list-clock{
+		width: 390px;
+		margin-bottom: 50px;
+	}
+	.main-page .list-clock li{
+		height: 80px;
+		width: 95px;
+	}
+	.main-page .list-clock span:after,
+	.main-page .list-clock span:before{
+		top: 39px;
+		left: 14px;
+		width: 28px;
+		
+	}
+	.main-page .list-clock span:before{
+		left: auto;
+		right: 14px;
+	}
+	.main-page .list-clock span{
+		font-size: 54px;
+		line-height: 54px;
+		padding: 14px 14px;
+	}
+	.main-page .holder-link .request-link {
+		width: 350px;
+		height: 70px;
+		font-size: 20px;		line-height: 70px;
+	}
+	.main-page .holder-link{margin-bottom: 40px;}
+	.info-page{padding-top: 96px;}
+	.info-page h2{
+		font-size: 60px;		line-height: 66px;
+		margin: 0 0 15px;
+	}
+	.info-page h3{
+		font-size: 26px;		line-height: 28px;
+	}
+	.info-page .bg{padding-bottom: 20px;}
+	.info-page .list .in{
+		height: 200px;
+		padding: 0 15px;
+	}
+	.info-page .list{
+		font-size: 25px;		line-height: 30px;
+	}
+	.whay-page h4{
+		font-size: 50px;		line-height: 56px;
+		margin: 0 0 15px;
+	}
+	.whay-page .figure{
+		height: 120px;
+	}
+	.whay-page .list .title{
+		font-size: 28px;		line-height: 32px;
+		margin: 0 0 15px;
+	}
+	.whay-page  p{margin-top: 0;}
+	.whay-page .list li{margin-bottom: 0;}
+
+	.strategy-page .holder{
+		padding: 40px 20px ;
+	}
+	.strategy-page .holder-box .box{margin: 0 0 20px;}
+	.strategy-page .holder-box .box:first-child{margin: 0 0 40px;}
+	.info-page .bg{ background: none;}
+}
+@media (max-width: 550px){
+	#header .logo{
+		-o-background-size: cover;		-webkit-background-size: cover;		-moz-background-size: cover;		background-size: cover;
+		width: 92px;
+		height: 35px;
+	}
+	.main-page .main-logo{
+		width: 264px;
+		height: 70px;
+		margin: 20px auto;
+	}
+	.main-page h1 {
+		font-size: 24px;
+		line-height: 28px;
+		margin: 0 0 20px;
+	}
+	.main-page h1 .title{
+		font-size: 40px;
+		line-height: 44px;
+	}
+	.main-page, 
+	.whay-page 
+	.list, 
+	.info-page, 
+	.strategy-page .holder-box .box{
+		font-size: 14px;		line-height: 16px;
+	}
+	.holder-text br{display:none;}
+	.main-page .clock-holder{padding: 10px 0 0;}
+	.main-page .list-clock{
+		width: 290px;
+		margin-bottom: 30px;
+	}
+	.main-page .list-clock li{
+		height: 56px;
+		width: 70px;
+	}
+	.main-page .list-clock span{
+		font-size: 32px;		line-height: 36px;
+		padding: 12px 15px;
+	}
+	.main-page .list-clock span:after,
+	.main-page .list-clock span:before{
+		top: 29px;
+		left: 9px;
+		width: 22px;
+	}
+	.main-page .list-clock span:before{
+		left: auto;
+		right: 9px;
+	}
+	.main-page .holder-link .request-link{
+		width: 270px;
+		height: 50px;
+		font-size: 18px;		line-height: 50px;
+	}
+	.main-page .holder-link{margin-bottom: 25px;}
+	.main-page{padding-bottom: 25px;}
+	.info-page h2{
+		font-size: 40px;		line-height: 44px;
+	}
+	.info-page h3{
+		font-size: 18px;		line-height: 20px;
+		margin: 0 0 15px; 
+	}
+	.info-page .bg {
+		padding: 0 20px;
+		margin: 0 0 20px;
+	}
+	.info-page .list li{padding: 0 20px;}
+	#nav, #nav.fixed-header{
+		padding: 10px 20px;
+	}
+	#nav .menu{
+		top: 66px;
+		padding-top: 10px;
+	}
+	.active-menu{
+		top: 24px;
+		right: 20px;
+	}
+	.active-menu, #nav .menu li{
+		font-size: 18px;		line-height: 22px;
+	}
+	#nav .menu li{
+		padding: 0 15px 0 0;
+	}
+	#nav .menu li a {
+		padding: 10px 5px;
+	}
+	.info-page .list .in{
+		font-size: 16px;		line-height: 20px;
+		height: 80px;
+	}
+	.info-page .list li{margin: 0 0 20px;}
+	.whay-page h4{
+		font-size: 36px;		line-height: 40px;
+	}
+	.whay-page .figure{
+		height: 80px;
+	}
+	.whay-page .list .title{
+		font-size: 20px;		line-height: 24px;
+		margin: 0 0 5px;
+	}
+	.strategy-page h5, .strategy-page h6{
+		font-size: 25px;		line-height: 30px;
+		margin: 0 0 15px;
+	}
+	.strategy-page .title {
+		font-size: 18px;		line-height: 22px;
+	}
+}
+@media (max-width: 450px){
+	.main-page h1 .title{
+		font-size: 34px;		line-height: 38px;
+	}
+	.main-page h1{
+		font-size: 20px;		line-height: 24px;
+	}
+	.main-page .holder-link .request-link{
+		font-size: 16px;		line-height: 50px;
+	}
+	.main-page .holder-download .link-download{
+		font-size: 16px;		line-height: 18px;
+	}
+	.info-page h2{
+		font-size: 32px;		line-height: 36px;
+	}
+	.info-page h3{
+		font-size: 16px;		line-height: 18px;
+	}
+	.whay-page h4{
+		font-size: 28px;		line-height: 32px;
+		margin: 0 0 5px;
+	}
+	.active-menu, #nav .menu li {
+		font-size: 15px;		line-height: 22px;
+	}
+}
+

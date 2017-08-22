@@ -62,7 +62,8 @@
 }
 @media (max-width: 768px) {
 	.blue-box {
-		font-size:23px;		line-height:26px;
+		font-size:23px;
+		line-height:26px;
 		margin:0;
   		padding:70px 0 0;
 	}
@@ -81,12 +82,14 @@
 	.holder-clients .list {text-align:center;}
 	.holder-clients .list li {
 		float:none;
-		display:inline-block;		vertical-align:top;
+		display:inline-block;
+		vertical-align:top;
 		width:27%;
 		margin:0 11px 52px 0;
 	}
 	.holder-clients .list .text {
-		font-size:25px;		line-height:30px;
+		font-size:25px;
+		line-height:30px;
 	}
 	.holder-clients .list {padding:0 0 0 20px;}
 	.holder-clients {margin:0 auto 12px;}
@@ -102,7 +105,8 @@
 	}
 	.lowestoft-page h6 br {display:none;}
 	.lowestoft-page .list > li li {
-		font-size:23px;		line-height:27px;
+		font-size:23px;
+		line-height:27px;
 		padding:0 0 0 16px;
 		margin:0 0 28px;
 	}
@@ -136,7 +140,8 @@
 	}
 	.oferig-page .list li:first-child {color:#30435e;}
 	.oferig-page .list {
-		font-size:23px;		line-height:25px;
+		font-size:23px;
+		line-height:25px;
 	}
 	.holder-bg .bg {
 		background: url(../images/bg-last-medium.jpg) no-repeat 0 0;
@@ -160,11 +165,14 @@
 		margin:-110px 0 30px -3px;
 	}
 	.img-box {
-		font-size:23px;		line-height:27px;
+		font-size:23px;
+		line-height:27px;
 	}
 	.img-box .holder-btn {
 		padding:0;
-		position:absolute;		bottom:138px;		left:0;
+		position:absolute;
+		bottom:138px;
+		left:0;
 		margin:0 0 0 -13px;
 	}
 	.img-box .join-now {
@@ -205,7 +213,8 @@
 	.press-page h5,
 	.press-page.partners h5,
 	.eqity-page h3	{
-		font-size:40px;		line-height:45px;
+		font-size:40px;
+		line-height:45px;
 		margin:0 0 30px;
 	}
 	.blue-box p {margin:0 0 20px;}
@@ -215,20 +224,23 @@
 	}
 	.blue-box h6,
 	.lowestoft-page h6 {
-		font-size:25px;		line-height:30px;
+		font-size:25px;
+		line-height:30px;
 	}
 	.holder-clients .list .text,
 	.lowestoft-page .list > li li,
 	.blue-box,
 	.oferig-page .list .title {
-		font-size:20px;		line-height:25px;
+		font-size:20px;
+		line-height:25px;
 	}
 	.lowestoft-page .list > li li,
 	.lowestoft-page .list > li {margin:0 0 10px;}
 	.oferig-page .list,
 	.lowestoft-page .holder-button .btn,
 	.img-box {
-		font-size:16px;		line-height:25px;
+		font-size:16px;
+		line-height:25px;
 	}
 	.lowestoft-page .holder-button .btn {padding:20px 30px;}
 	.oferig-page .in {padding:20px;}
@@ -318,10 +330,12 @@
 	.holder-clients .list .text, 
 	.lowestoft-page .list > li li, 
 	.blue-box	 {
-		font-size:16px;		line-height:20px;
+		font-size:16px;
+		line-height:20px;
 	}
 	.oferig-page .list {
-		font-size:14px;		line-height:16px;
+		font-size:14px;
+		line-height:16px;
 	}
 	.holder-clients .list li,
 	.lowestoft-page h6,
@@ -347,7 +361,8 @@
 	}
 	.gallery-team .holder-text {margin:0 0 10px;}
 	.gallery-team .gallery-holder ul {
-		font-size:14px;		line-height:19px;
+		font-size:14px;
+		line-height:19px;
 	}
 	.team-page {margin:0 0 20px;}
 	.lowestoft-page .list > li li:after {
@@ -377,11 +392,13 @@
 @media (max-width: 450px) {
 	.oferig-page .in {padding:10px;}
 	.oferig-page .list .title {
-		font-size:15px;		line-height:17px;
+		font-size:15px;
+		line-height:17px;
 		margin:0 0 5px;
 	}
 	.oferig-page .list {
-		font-size:13px;		line-height:15px;
+		font-size:13px;
+		line-height:15px;
 	}
 	.gallery-team .in .holder {padding:10px 15px;}
 	.gallery-team .linkedin {
@@ -410,4 +427,40 @@
 	.gallery-team .gallery-holder ul li {width:290px;}
 	.list-partners figure img {max-width:80px;}
 	.list-partners figure {margin:0 0 10px;}
+}
+/*22.08.2017*/
+.checkbox{
+	display:block;
+	position:absolute;
+	top:-9999px;
+	left:-9999px;
+}
+form input[type="email"]{
+	height: 89px;
+	width:100%;
+	background:none;
+	padding: 0;
+	margin: 0;
+	background: none;
+	outline: none;
+	outline: 0;
+	color:#30435e;
+	border: 1px solid #abb3be;
+	padding:25px 33px;
+	font: 32px/32px 'Conv_gotham-pro-light', arial, helvetica, sans-serif;
+	
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+form input[type="email"].error{
+	border-color:#fd0107;
+}
+#preorder-error{margin:0 0 10px;}
+@media (max-width: 700px) {
+	form input[type="email"]{
+		padding:10px 15px;
+		font:17px/25px "Conv_gotham-pro-light",arial,helvetica,sans-serif;
+		height:50px;
+	}
 }

@@ -457,6 +457,21 @@ form input[type="email"].error{
 	border-color:#fd0107;
 }
 #preorder-error{margin:0 0 10px;}
+#header .order{
+	background-color:#0b8dc0;
+	color:#fff;
+	border: 1px solid #0b8dc0;
+	-webkit-transition: background-color .2s ease-in-out, border-color .2s ease-in-out, color .2s ease-in-out ;
+	-moz-transition: background-color .2s ease-in-out, border-color .2s ease-in-out, color .2s ease-in-out;
+	-ms-transition: background-color .2s ease-in-out, border-color .2s ease-in-out, color .2s ease-in-out;
+	-o-transition: background-color .2s ease-in-out, border-color .2s ease-in-out, color .2s ease-in-out;
+	transition: background-color .2s ease-in-out, border-color .2s ease-in-out, color .2s ease-in-out;
+}
+#header .order:hover{
+	color:#0b8dc0;
+	background-color:#FFF;
+	border: 1px solid #fff;
+}
 @media (max-width: 700px) {
 	form input[type="email"]{
 		padding:10px 15px;

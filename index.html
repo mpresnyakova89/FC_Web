@@ -1477,7 +1477,7 @@
 	    }
 
 	    function registerUser(data) {
-	      $.post('/preorder/register', data, function(response) {
+	      $.post('https://preorder.finles.capital/preorder/register', data, function(response) {
 	        if (response.success === true) {
 	          $(SELECTORS.PREORDER_FORM_FIELDS).hide();
 	          $(SELECTORS.PREORDER_SUCCESS_FIELD).show();

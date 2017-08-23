@@ -177,7 +177,6 @@ var pageInit = {
                         elements: '.gallery-holder > ul > li',
                         disableBtn: 'hidden'
                     });
-                    console.log('1245');
                 }
 
                 function all() {

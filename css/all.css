@@ -829,3 +829,7 @@ form input[type="email"].error{
 		line-height:2px;
 	}
 }
+.checkbox{
+	position:static;
+	opacity:0;
+}

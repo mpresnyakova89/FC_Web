@@ -1367,7 +1367,6 @@
 		<p>The exchange rate of the FND to EUR will be equal to 1.00 during the ICO Period. So <strong>1 FND = 1 EUR</strong></p>
 		<strong class="title">Pre-order request</strong>
 		<form action="#" id="preorder-form" novalidate="novalidate" class="inner js_preorderForm form">
-			<fieldset>
 		        <div id="preorder-success"></div>
 		        <div id="preorder-form-fields">
 					<div class="text"><input type="email" id="js_email" name="email" class="js_emailInput text-input" value="" placeholder="Your email" /></div>
@@ -1647,7 +1646,6 @@
 						<input class="btn-login" type="submit" value="PRE-ORDER" />
 					</div>
 				</div>
-			</fieldset>
 		</form>
 	</div>
 	<!--<div class="modal login" id="login">
@@ -1768,8 +1766,10 @@
 	          $(SELECTORS.PREORDER_SUCCESS_FIELD).show();
 	          if (response.warning) {
 	            $(SELECTORS.PREORDER_SUCCESS_FIELD).text(response.warning);
+				jQuery('body,html').animate({scrollTop: $('#citizen').offset().top}, 1500);
 	          } else {
 	            $(SELECTORS.PREORDER_SUCCESS_FIELD).text('Success. Check email for instructions.');
+				jQuery('body,html').animate({scrollTop: $('#citizen').offset().top}, 1500);
 	          }
 	        } else {
 	          grecaptcha.reset();
@@ -1778,6 +1778,7 @@
 	      }).fail(function(error) {
 	        console.log('error', error);
 	        internalError('Internal error');
+			jQuery('body,html').animate({scrollTop: $('#citizen').offset().top}, 1500);
 	      });
 	    }
 

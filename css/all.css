@@ -825,11 +825,37 @@ form input[type="email"].error{
 @media (max-width: 700px) {
 	.selectize-control.single .selectize-input{padding:10px 15px;}
 	.country-selector .item{
-		font-size:17px;
-		line-height:2px;
+		font-size: 17px;
+		line-height: 32px;
+		height: 32px;
 	}
 }
 .checkbox{
 	position:static;
 	opacity:0;
+}
+.country-selector{
+	width:100%;
+	max-width:100%;
+}
+#preorder-success{
+	font-weight:bold;
+	color:#339a48;
+}
+#preorder-error{
+	font-weight:bold;
+	color:#ff0000;
+}
+form .text{overflow:visible;}
+form  fieldset{
+	width:100%;
+	display:block;
+	overflow:hidden;
+	position:relative;
+}
+@media (max-width: 700px) {
+	.modal.login{padding: 40px 15px;}
+}
+@media (max-width: 550px) {
+	.modal.login{padding: 40px 15px;}
 }

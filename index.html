@@ -17,7 +17,6 @@
 				<strong class="logo"></strong>
 				<div class="holder-botton">
 					<a class="order simplebox" href="#preorder">pre-order now</a>
-					<!--<a class="order simplebox" href="#login">login</a>-->
 				</div>
 			</header>
 			<div class="container">
@@ -1343,7 +1342,10 @@
 	<!-- wrapper  end  -->
 	<div class="modal login" id="preorder">
 		<a class="close" href="#">close</a>
+		<div class="box-head">
 		<strong class="title">Pre Order Description</strong>
+			<a class="order simplebox" href="#login">login</a>
+		</div>
 		<p>Please, complete the registration to participate in the Pre-order. Immediately after the registration, you will receive an email with instructions on how to complete Pre-ordering and our official ETH/BTC/LTC addresses to send your contributions.</p>
 		<p>When the transaction receives blockchain confirmations, you'll be sent an email indicating that your account is activated.</p>
 		<strong class="text-main">
@@ -1722,7 +1724,7 @@
 	<div class="modal login" id="password">
 		<a class="close" href="#">close</a>
 		<strong class="title">Password recovery</strong>
-		<form class="form" action="/forgotpassword" id="UserForgotpasswordForm" method="post" accept-charset="utf-8">
+		<form class="form" action="https://preorder.finles.capital/preorder/forgotpassword" id="UserForgotpasswordForm" method="post" accept-charset="utf-8">
 			<fieldset>
 				<div class="text"><input name="data[User][username]" placeholder="Email" maxlength="256" id="UserUsername" required="required" type="text"></div>
 				<div class="text">

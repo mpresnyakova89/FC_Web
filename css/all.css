@@ -859,3 +859,77 @@ form  fieldset{
 @media (max-width: 550px) {
 	.modal.login{padding: 40px 15px;}
 }
+/*28.08.2017*/
+.box-head{
+	position:relative;
+	width:100%;
+	padding:0 110px 0 0;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.login .order {
+	-webkit-appearance: none;
+	outline: none;
+	outline: 0;
+	height: 50px;
+	width:207px;
+	color:#fff;
+	border: none;
+	text-transform:uppercase;
+	display:inline-block;
+	vertical-align:top;
+	margin:0 10px 10px;
+	text-align:center;
+	text-decoration:none;
+	position:absolute;
+	top:7px;
+	right:-120px;
+	font: 19px/50px 'Conv_gotham-pro-bold', arial, helvetica, sans-serif;
+	background-image: -ms-linear-gradient(left, rgba(47, 153, 207, 0.8) 0%, rgba(34, 189, 218, 0.8) 100%);
+	background-image: -moz-linear-gradient(left, rgba(47, 153, 207, 0.8) 0%, rgba(34, 189, 218, 0.8) 100%);
+	background-image: -o-linear-gradient(left, rgba(47, 153, 207, 0.8) 0%, rgba(34, 189, 218, 0.8) 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(47, 153, 207, 0.8)), color-stop(100, rgba(34, 189, 218, 0.8)));
+	background-image: -webkit-linear-gradient(left, rgba(47, 153, 207, 0.8) 0%, rgba(34, 189, 218, 0.8) 100%);
+	background-image: linear-gradient(to right, rgba(47, 153, 207, 0.8) 0%, rgba(34, 189, 218, 0.8) 100%);
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+.login .order:hover {
+	background-color:#0585cb;
+}
+@media (max-width: 1024px) {
+	.modal.login{padding:100px 70px 50px;}
+	.box-head{padding:0 200px 0 0;}
+	.login .order{
+		right:-40px;
+		top:8px;
+	}
+}
+@media (max-width: 700px) {
+	.modal.login{padding:60px 30px 40px;}
+	.login .order{
+		height:40px;
+		font-size:16px;
+		line-height:40px;
+		width:150px;
+		top:0;
+		right:-30px;
+	}
+}
+@media (max-width: 550px) {
+	.modal.login{padding:40px 15px;}
+	.box-head{padding:40px 0 0;}
+	.login .order{
+		right:auto;
+		left:0;
+		margin: 0 10px 10px 0;
+		height: 30px;
+		font-size:12px;
+		line-height: 30px;
+	}
+}

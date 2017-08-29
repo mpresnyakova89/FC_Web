@@ -902,6 +902,7 @@ form  fieldset{
 .login .order:hover {
 	background-color:#0585cb;
 }
+.g-recaptcha > div{margin:0 auto;}
 @media (max-width: 1024px) {
 	.modal.login{padding:100px 70px 50px;}
 	.box-head{padding:0 200px 0 0;}

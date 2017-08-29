@@ -12,9 +12,38 @@ jQuery(document).ready(function () {
     $('.simplebox').simplebox();
     scrollBox();
     checkHash();
-
     scrollHead();
+	initLogin();
 });
+
+function initLogin() {
+	$('form.form-login').each(function(){
+		var hold = $(this);
+		var login = hold.find('.btn-login');
+		var error = hold.find('.error-login');
+		var input = hold.find('input[type="text"], input[type="password"]');
+
+		login.click(function() {
+			$.ajax({
+				type: 'POST',
+				data: hold.serialize(),
+				dataType: 'json',
+				url: hold.attr('action'),
+				success: function(e, msg){
+					console.log(msg , e);
+					console.log(hold.serialize());
+				},
+				error: function(e, msg){
+					error.removeClass('outtaHere');
+					console.log('Server error:', msg , e);
+					console.log(hold.serialize());
+				}
+			});
+
+			return false;
+		});
+	});
+}
 
 function OpenBox(obj) {
     $(obj.wrap).each(function () {

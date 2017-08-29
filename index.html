@@ -1640,8 +1640,7 @@
 					<div id="preorder-error"></div>
 					<div class="text">
 						<div class="hold-cap">
-							<div class="g-recaptcha" data-sitekey="6LcHniwUAAAAABY4E-LOIBBxFKyuBUcV33-H2yo7" ></div>
-							<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+							<div class="g-recaptcha" data-sitekey="" ></div>
 						</div>
 					</div>
 					<div class="text">
@@ -1708,12 +1707,17 @@
 	<div class="modal login" id="login">
 		<a class="close" href="#">close</a>
 		<strong class="title">Login to existing account</strong>
-		<form class="form" action="https://preorder.finles.capital/preorder/login" id="UserLoginForm" method="post" accept-charset="utf-8">
+		<form class="form form-login" action="https://preorder.finles.capital/preorder/login" id="UserLoginForm" method="post" accept-charset="utf-8">
 			<fieldset>
-				<div class="text"><input name="data[User][username]" placeholder="Email" maxlength="256" id="UserUsername" required="required" type="text"></div>
-				<div class="text"><input name="data[User][password]" placeholder="Password" value="" id="UserPassword" required="required" type="password"> </div>
+				<div class="text"><input name="username" placeholder="Email" maxlength="256" id="UserUsername" required="required" type="text"></div>
+				<div class="text"><input name="password" placeholder="Password" value="" id="UserPassword" required="required" type="password"> </div>
 				<div class="text">
 					<a class="link forgot-password-link simplebox" href="#password">Lost password?</a>
+				</div>
+                                <div class="text">
+                                    <div class="hold-cap">
+						<div class="g-recaptcha" data-sitekey="" ></div>
+                                    </div>
 				</div>
 				<div class="text">
 					<input class="btn-login button" type="submit" value="Login" />
@@ -1843,7 +1847,32 @@
     });
 
 	  })
+	  var onloadCallback = function() {
+        var divcaptcha = document.getElementsByClassName('g-recaptcha');
+        for (var i = 0; i < divcaptcha.length; i++) {
+          grecaptcha.render(divcaptcha[i], {
+            'sitekey': '6LcHniwUAAAAABY4E-LOIBBxFKyuBUcV33-H2yo7'
+          });
+        }
+      }
 	</script>
+	
+	    <!-- START GA  -->
+        <!-- END GA  -->
+
+    <!-- Support chat -->
+    <!--<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="756a41b2-63ba-48fc-a10d-c89b7c41bc02";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    --><script type="text/javascript">
+      (function() {
+        if (typeof $crisp == 'undefined') {
+          return;
+        }
+
+                                                                        
+$crisp.push(["set", "session:data", ["curr_page", "users/login"]]);
+                      })();
+    </script>
+    <!-- End Support chat -->
 
 	    <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -1853,4 +1882,5 @@
 	  ga('create', 'UA-104987132-1', 'auto');
 	  ga('send', 'pageview');
 	</script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 </body>

@@ -1741,7 +1741,28 @@
         <div class="modal login" id="login">
             <a class="close" href="#">close</a>
             <strong class="title">Login to existing account</strong>
-            <form class="form form-login" action="https://preorder.finles.capital/preorder/login" id="UserLoginForm" method="post" accept-charset="utf-8">
+            <form class="form form-login" action="" id="UserLoginForm" method="post" accept-charset="utf-8">
+                <fieldset>
+                    <div class="text"><input name="username" placeholder="Email" maxlength="256" id="UserUsername" required="required" type="text"></div>
+                    <div class="text"><input name="password" placeholder="Password" value="" id="UserPassword" required="required" type="password"> </div>
+                    <div class="text">
+                        <a class="link forgot-password-link simplebox" href="#password">Lost password?</a>
+                    </div>
+                    <div class="text">
+                        <div class="hold-cap">
+                            <div class="g-recaptcha" data-sitekey="" ></div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <input class="btn-login button" type="submit" value="Login" />
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+		<div class="modal login" id="login11">
+            <a class="close" href="#">close</a>
+            <strong class="title">Login to existing account</strong>
+            <form class="form form-login" action="/login" id="UserLoginForm" method="post" accept-charset="utf-8">
                 <fieldset>
                     <div class="text"><input name="username" placeholder="Email" maxlength="256" id="UserUsername" required="required" type="text"></div>
                     <div class="text"><input name="password" placeholder="Password" value="" id="UserPassword" required="required" type="password"> </div>

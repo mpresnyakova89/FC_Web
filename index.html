@@ -33,9 +33,7 @@
                     'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '1173446136012460');
             fbq('track', 'PageView');
-            fbq('track', 'AddToWishlist');
-            fbq('track', 'Lead');
-            fbq('track', 'CompleteRegistration');
+            fbq('track', 'ViewContent');
         </script>
         <noscript>
         <img height="1" width="1" 
@@ -1669,8 +1667,8 @@
                         <label for="readed">I have read and agree with all the above-mentioned information.</label>
                     </div>
                     <div class="hold-checkbox">
-                        <input class="checkbox" type="checkbox" title="Please, confirm that you are not a U.S. or Singapore persone" id="citizen" name="citizenCheckbox" />
-                        <label for="citizen"> Check here to confirm that you are not a U.S. or Singapore citizen or EEA, resident or entity (a "U.S. or Singapore or EEU Person") nor are you purchasing FND tokens on behalf of a U.S. or Singapore or EEA Person.</label>
+                        <input class="checkbox" type="checkbox" title="Please, confirm that you are not a U.S. or Singapore person" id="citizen" name="citizenCheckbox" />
+                        <label for="citizen">Check here to confirm that you are not a U.S. or Singapore citizen resident or entity (a "U.S. or Singapore ") nor are you purchasing FND tokens on behalf of a U.S. or Singapore  Person.</label>
                     </div>					
                     <div id="preorder-error"></div>
                     <div class="text">
@@ -1679,7 +1677,7 @@
                         </div>
                     </div>
                     <div class="text">
-                        <input class="btn-login" type="submit" value="PRE-ORDER" />
+                        <input class="btn-login" type="submit" value="PRE-ORDER" onclick="fbq('track', 'Lead');"/>
                     </div>
                 </div>
             </form>
@@ -1713,7 +1711,7 @@
                     <div class="text"><input type="text" class="text-input" value="" placeholder="Name" /></div>
                     <div class="text"><input type="text" class="text-input" value="" placeholder="Your email" /></div>
                     <div class="text">
-                        <input class="btn-login" type="submit" value="Subscribe" />
+                        <input class="btn-login" type="submit" onclick="fbq('track', 'AddToWishlist');" value="Subscribe" />
                     </div>
                 </fieldset>
             </form>
@@ -1734,7 +1732,7 @@
                     <div class="text"><input type="text" name="MERGE1" id="MERGE1" class="text-input" value="" placeholder="Name" /></div>
                     <div class="text"><input type="text" name="MERGE0" id="MERGE0" class="text-input" value="" placeholder="Your email" /></div>
                     <div class="text">
-                        <input class="btn-login" type="submit" value="Subscribe" />
+                        <input class="btn-login" type="submit"  value="Subscribe" />
                     </div>
                 </fieldset>
             </form>

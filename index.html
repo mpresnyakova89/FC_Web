@@ -33,9 +33,7 @@
                     'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '1173446136012460');
             fbq('track', 'PageView');
-            fbq('track', 'AddToWishlist');
-            fbq('track', 'Lead');
-            fbq('track', 'CompleteRegistration');
+            fbq('track', 'ViewContent');
         </script>
         <noscript>
         <img height="1" width="1" 
@@ -1378,31 +1376,31 @@
         <div class="modal login" id="preorder">
             <a class="close" href="#">close</a>
             <div class="box-head">
-                <strong class="title">Pre Order Description</strong>
+                <strong class="title">Finles Capital Platform Pre-Order</strong>
                 <!--<a class="order simplebox" href="#login">login</a>-->
             </div>
-            <p>Please, complete the registration to participate in the Pre-order. Immediately after the registration, you will receive an email with instructions on how to complete Pre-ordering and our official ETH/BTC/LTC addresses to send your contributions.</p>
-            <p>When the transaction receives blockchain confirmations, you'll be sent an email indicating that your account is activated.</p>
-            <strong class="text-main">
+            <p>To participate in the Pre-Order, kindly complete the registration procedure. Please, indicate the ETH address to deposit your FUND tokens after token distribution period. During the Pre-Order, we will accept the following currencies: Ethereum, Bitcoin and Litecoin.</p>
+            <p>After completing the registration you will receive an email with instructions on how to proceed with Pre-Ordering; this email will include the ETH/BTC/LTC addresses for where the pre-order contributions should be sent.</p>
+            <p>Once funds are received and after a minimum of two blockchains confirmations, your investment account will be activated. You will receive a confirmation email that your account is activated.</p>
+<!--            <strong class="text-main">
                 Important notes:
             </strong>
-            <p><strong>Minimum Funds Transaction:</strong></p>
-            <p>The minimum amount required for participation in the Pre-Order is:</p>
+            <p><strong>Minimum Funds Transaction:</strong></p>-->
+            <p>The minimum amount required for participation in the Pre-Order is as follows:</p>
             <strong class="text-main">
                 BTC 0,01 OR
                 <br />ETH 0,2 OR 
                 <br />LTC 0,8
 
             </strong>
-            <p>Transaction of funds lower than the indicated above will be returned to the payee after the end of token distribution period.</p>
-            <strong>Funds storage</strong>
-            <p>Your Pre-order funds will be stored in the currency you used for contribution. On the ICO Date your funds will be converted according to this process:</p>
-            <ol>
-                <li>Contributed currency will be converted to <strong>Euro</strong>.</li>
-                <li><strong>Euro</strong> will be converted to <strong>FND</strong>.</li>
-            </ol>
-            <p>The exchange rate of Contributed Currency to Euro will be set according to the publicly open information from top European exchanges prior 6 hours before the distribution launch.</p>
-            <p>The exchange rate of the FND to EUR will be equal to 1.00 during the ICO Period. So <strong>1 FND = 1 EUR</strong></p>
+            <p>Any transaction of funds lower than the minimal amount stated will be returned to the payee after the token distribution period ends.</p>
+            <p>The FND token Sales Date is set for the  <strong>30th of September, 2017</strong></p>
+            <p>For Pre-Order participants, the FND rate shall be 1 FND = 1 EUR.</p>
+            <p>Your pre-order contribution will be registered in the original currency until the Sales Date date. On the Sales date your contribution will be virtually converted into EUR and then exchanged to FND at the exchange rate that will be fixed 6 hours before the distribution starts.</p>
+            
+            <p>Exchange rate means the rate EUR / < Contributed currency > which will be calculated based on publicly available information from major exchanges 6 hours before distribution. </p>
+            <p>The exchange rate FND/EUR will be equal to 1.00.</p>
+            <p>Participants of the pre-order will have to accept Terms of Token Sales that will be used for the distribution of FNDs.</p>            
             <strong class="title">Pre-order request</strong>
             <form action="#" id="preorder-form" novalidate="novalidate" class="inner js_preorderForm form">
                 <div id="preorder-success"></div>
@@ -1670,8 +1668,8 @@
                         <label for="readed">I have read and agree with all the above-mentioned information.</label>
                     </div>
                     <div class="hold-checkbox">
-                        <input class="checkbox" type="checkbox" title="Please, confirm that you are not a U.S. or Singapore persone" id="citizen" name="citizenCheckbox" />
-                        <label for="citizen"> Check here to confirm that you are not a U.S. or Singapore citizen or EEA, resident or entity (a "U.S. or Singapore or EEU Person") nor are you purchasing FND tokens on behalf of a U.S. or Singapore or EEA Person.</label>
+                        <input class="checkbox" type="checkbox" title="Please, confirm that you are not a U.S. or Singapore person" id="citizen" name="citizenCheckbox" />
+                        <label for="citizen">Check here to confirm that you are not a U.S. or Singapore citizen resident or entity (a "U.S. or Singapore ") nor are you purchasing FND tokens on behalf of a U.S. or Singapore  Person.</label>
                     </div>					
                     <div id="preorder-error"></div>
                     <div class="text">
@@ -1680,7 +1678,7 @@
                         </div>
                     </div>
                     <div class="text">
-                        <input class="btn-login" type="submit" value="PRE-ORDER" />
+                        <input class="btn-login" type="submit" value="PRE-ORDER" onclick="fbq('track', 'Lead');"/>
                     </div>
                 </div>
             </form>
@@ -1714,7 +1712,7 @@
                     <div class="text"><input type="text" class="text-input" value="" placeholder="Name" /></div>
                     <div class="text"><input type="text" class="text-input" value="" placeholder="Your email" /></div>
                     <div class="text">
-                        <input class="btn-login" type="submit" value="Subscribe" />
+                        <input class="btn-login" type="submit" onclick="fbq('track', 'AddToWishlist');" value="Subscribe" />
                     </div>
                 </fieldset>
             </form>
@@ -1743,7 +1741,28 @@
         <div class="modal login" id="login">
             <a class="close" href="#">close</a>
             <strong class="title">Login to existing account</strong>
-            <form class="form form-login" action="https://preorder.finles.capital/preorder/login" id="UserLoginForm" method="post" accept-charset="utf-8">
+            <form class="form form-login" action="" id="UserLoginForm" method="post" accept-charset="utf-8">
+                <fieldset>
+                    <div class="text"><input name="username" placeholder="Email" maxlength="256" id="UserUsername" required="required" type="text"></div>
+                    <div class="text"><input name="password" placeholder="Password" value="" id="UserPassword" required="required" type="password"> </div>
+                    <div class="text">
+                        <a class="link forgot-password-link simplebox" href="#password">Lost password?</a>
+                    </div>
+                    <div class="text">
+                        <div class="hold-cap">
+                            <div class="g-recaptcha" data-sitekey="" ></div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <input class="btn-login button" type="submit" value="Login" />
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+		<div class="modal login" id="login11">
+            <a class="close" href="#">close</a>
+            <strong class="title">Login to existing account</strong>
+            <form class="form form-login" action="/login" id="UserLoginForm" method="post" accept-charset="utf-8">
                 <fieldset>
                     <div class="text"><input name="username" placeholder="Email" maxlength="256" id="UserUsername" required="required" type="text"></div>
                     <div class="text"><input name="password" placeholder="Password" value="" id="UserPassword" required="required" type="password"> </div>

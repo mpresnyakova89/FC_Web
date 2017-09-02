@@ -71,7 +71,7 @@
                                 <li><span class="sec"></span></li>
                             </ul>
                             <div class="holder-button">
-                                <a class="btn simplebox" href="#remind"><span>remind me</span></a>
+                                <a class="btn simplebox" href="#join"><span>remind me</span></a>
                                 <a class="btn order simplebox" href="#preorder"><span>pre-order now</span></a>
                             </div>
                         </div>
@@ -1667,18 +1667,23 @@
         </div>-->
         <div class="modal login" id="join">
             <a class="close" href="#">close</a>
-            <strong class="title">join now</strong>
-            <form action="https://capital.us16.list-manage.com/subscribe/post" method="post" class="form" target="_blank" novalidate>
-                <input type="hidden" name="u" value="099515d721e762a40336bdc0d">
-                <input type="hidden" name="id" value="4347f2ab86">
+        <div id="mc_embed_signup">
+            <form class="form validate" action="https://capital.us16.list-manage.com/subscribe/post?u=099515d721e762a40336bdc0d&amp;id=4347f2ab86" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                 
                 <fieldset>
-                    <div class="text"><input type="text" class="text-input" name="FNAME" value="" placeholder="Name" /></div>
-                    <div class="text"><input type="text" class="text-input"  name="EMAIL" value="" placeholder="Your email" /></div>
+                    <div class="text"><input type="text" class="text-input" name="FNAME" value="" placeholder="Name" id="mce-FNAME"/></div>
+                    <div class="text"><input type="text" class="text-input"  name="EMAIL" value="" placeholder="Your email" id="mce-EMAIL"/></div>
                     <div class="text">
-                        <input class="btn-login" type="submit" name="subscribe" onclick="fbq('track', 'AddToWishlist');" value="Subscribe" />
+                        <input class="btn-login" type="submit" name="subscribe" onclick="fbq('track', 'AddToWishlist');" value="Subscribe" id="mc-embedded-subscribe"/>
                     </div>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_099515d721e762a40336bdc0d_4347f2ab86" tabindex="-1" value=""></div>
+                    <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div> 
                 </fieldset>
             </form>
+        </div>
         </div>
         <div class="modal busines" id="busines">
             <a class="close" href="#">close</a>
@@ -1763,6 +1768,8 @@
         <script type="text/javascript" src="js/jquery.main.js"></script>
         <script type="text/javascript" src="js/jquery.validate.min.js"></script>
         <script type="text/javascript" src="js/web3.min.js"></script>
+        <script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+        <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="2fcbea56-ab81-4893-a864-054d9037dbeb";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
         <script>
             $(function () {

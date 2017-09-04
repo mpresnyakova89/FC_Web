@@ -934,3 +934,57 @@ form  fieldset{
 		line-height: 30px;
 	}
 }
+
+ /* 04.09.2017 */
+.holder-line-r .box-line-1 {width:22%;}
+.holder-line-r .box-line-2 {width:25%;}
+.holder-line-r .box-line-3 {width:25%;}
+.holder-line-r .box-line-4 {width:14%;}
+.holder-line-r .box-line-5 {
+	float:left;
+	width:14%;
+	position:static;
+}
+.holder-line-r .box-line-5 .in-line {background:#21d2fc;}
+.holder-line-r .box-line-6 {
+	position:absolute;
+	top:50%;
+	right:-39px;
+	width:40px;
+}
+.holder-line-r .box-line-6 .bull {border-color:#21d2fc;}
+@media (max-width: 1150px) {
+	.holder-line-r .text-top .hide {display:block;}
+	.holder-line-r .text-bottom {display:none;}
+	.holder-line-r .box-line-1 .text-top,
+	.holder-line-r .box-line-3 .text-top,
+	.holder-line-r .box-line-5 .text-top {
+		bottom: auto;
+		top: 100%;
+		margin: 13px 0 0;
+		text-align:left;
+		left:-40px;
+	}
+	.holder-line-r .box-line-5 .text-top  {
+		left:-100px;
+		width:110px;
+		text-align:right;
+	}
+	.holder-line-r .box-line-1 .text-top {
+		left:-20px;
+	}
+	
+	.holder-line-r .text-top {
+		font-size:15px;
+		line-height:20px;
+	}
+	
+	.holder-line-r {
+		font-size:15px;
+		line-height:15px;
+	}
+}
+@media (max-width: 500px) {
+	.holder-line-r {min-width:500px;}
+	.hold-pixel {overflow-y:auto;}
+}

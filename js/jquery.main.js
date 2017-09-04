@@ -21,7 +21,7 @@ function initLogin() {
 		var hold = $(this);
 		var login = hold.find('.btn-login');
 		var error = hold.find('.error-login');
-		var input = hold.find('input[type="text"], input[type="password"]');
+		var input = hold.find('input[type="text"], input[type="text"]');
 
 		login.click(function() {
 			$.ajax({

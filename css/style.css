@@ -2055,7 +2055,7 @@ address {
 	display:block;
 	width:100%;
 	text-align:center;
-	margin:0 0 61px;
+	margin:0 0 15px;
 }
 .list-partners figure img {
 	display:block;
@@ -2071,7 +2071,7 @@ address {
 .list-partners .title {
 	display:block;
 	color:#30435e;
-	font: 30px/30px 'Conv_gotham-pro-medium', arial, helvetica, sans-serif;
+	font: 25px/25px 'Conv_gotham-pro-medium', arial, helvetica, sans-serif;
 	font-weight:normal;
 	margin:0 0 15px;
 }

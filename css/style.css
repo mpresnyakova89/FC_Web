@@ -968,14 +968,14 @@ address {
 	margin: -4px 0 0;
 	background: #1fc9f0;
 }
-.holder-line-r .box-line-2 {width: 24.5%;}
+.holder-line-r .box-line-2 {width: 32.5%;}
 .holder-line-r .box-line-2 .bull {border-color:#0491d2;}
 .holder-line-r .box-line-2 .in-line {background-image: linear-gradient(to right, #0493d3, #04a3dc);}
 .holder-line-r .box-line-1 .in-line {background-image: linear-gradient(to right, #0586cc, #0491d2);}
 .holder-line-r .box-line-1 {width: 25%;}
 .holder-line-r .box-line-1 .bull {border-color:#0585cb;}
 .holder-line-r .box-line-3 .in-line {background-image: linear-gradient(to right, #03a5de, #02c2ee);}
-.holder-line-r .box-line-3 {width: 35.5%;}
+.holder-line-r .box-line-3 {width: 27.5%;}
 .holder-line-r .box-line-3 .bull {border-color:#0491d2;}
 .holder-line-r .box-line-4 .bull{border-color:#02c3ef;}
 .holder-line-r .box-line-5 {

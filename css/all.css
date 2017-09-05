@@ -936,6 +936,7 @@ form  fieldset{
 }
 
  /* 04.09.2017 */
+ 
 .holder-line-r .box-line-1 {width:22%;}
 .holder-line-r .box-line-2 {width:25%;}
 .holder-line-r .box-line-3 {width:25%;}
@@ -996,7 +997,7 @@ form  fieldset{
 	padding:0;
 	margin:0;
 }
-.gallery-partners {
+/*.gallery-partners {
 	max-width: 1196px;
 	padding: 0 88px;
 	overflow: hidden;
@@ -1066,4 +1067,4 @@ form  fieldset{
 		right:5px;
 	}
 	.gallery-partners{padding:0 34px;}
-}
+}*/

@@ -21,7 +21,7 @@ function initLogin() {
 		var hold = $(this);
 		var login = hold.find('.btn-login');
 		var error = hold.find('.error-login');
-		var input = hold.find('input[type="text"], input[type="password"]');
+		var input = hold.find('input[type="text"], input[type="text"]');
 
 		login.click(function() {
 			$.ajax({
@@ -193,7 +193,7 @@ var pageInit = {
             this.galFade();
             this.team();
             this.press();
-			this.galPartners();
+//			this.galPartners();
         },
         press: function () {
             $('body').each(function () {
@@ -299,7 +299,7 @@ var pageInit = {
                 });
             });
         },
-        galPartners: function () {
+       /* galPartners: function () {
             $('body').each(function () {
                 var hold = $(this);
                 var gal = hold.find('.gallery-partners');
@@ -316,7 +316,7 @@ var pageInit = {
                     }, 300);
                 });
             });
-        }
+        }*/
     }
 
 

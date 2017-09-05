@@ -193,7 +193,7 @@ var pageInit = {
             this.galFade();
             this.team();
             this.press();
-			this.galPartners();
+//			this.galPartners();
         },
         press: function () {
             $('body').each(function () {
@@ -299,7 +299,7 @@ var pageInit = {
                 });
             });
         },
-        galPartners: function () {
+       /* galPartners: function () {
             $('body').each(function () {
                 var hold = $(this);
                 var gal = hold.find('.gallery-partners');
@@ -316,7 +316,7 @@ var pageInit = {
                     }, 300);
                 });
             });
-        }
+        }*/
     }
 
 

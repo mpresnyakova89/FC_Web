@@ -1388,7 +1388,7 @@
         <a class="close" href="#">close</a>
         <div class="box-head">
             <strong class="title">Finles Capital Platform Pre-Order</strong>
-            <!--<a class="order simplebox" href="#login">login</a>-->
+            <a class="order simplebox" href="#login">login</a>
         </div>
         <p>To participate in the Pre-Order, kindly complete the registration procedure. Please, indicate the ETH address to deposit your FND tokens after token distribution period. During the Pre-Order, we will accept the following currencies: Ethereum, Bitcoin, Litecoin and other currencies supported by the Platform.</p>
         <p>After completing the registration you will receive an email with instructions on how to proceed with Pre-Ordering; this email will include the ETH/BTC/LTC addresses for where the pre-order contributions should be sent.</p>
@@ -1763,23 +1763,20 @@
     <div class="modal login" id="login">
         <a class="close" href="#">close</a>
         <strong class="title">Login to existing account</strong>
-        <form class="form form-login" action="" id="UserLoginForm" method="post" accept-charset="utf-8">
-            <fieldset>
-                <div class="text"><input name="username" placeholder="Email" maxlength="256" id="UserUsername" required="required" type="text"></div>
-                <div class="text"><input name="password" placeholder="Password" value="" id="UserPassword" required="required" type="password"> </div>
-                <div class="text">
-                    <a class="link forgot-password-link simplebox" href="#password">Lost password?</a>
-                </div>
-                <div class="text">
-                    <div class="hold-cap">
-                        <div class="g-recaptcha" data-sitekey="" ></div>
+         <form class="form form-login" action="https://preorder.finles.capital/preorder/open" id="UserLoginForm" method="post" accept-charset="utf-8">
+                <fieldset>
+                    <div class="text"><input name="email" placeholder="Email" maxlength="256" id="UserUsername" required="required" type="text"></div>
+                    <div class="text"><input name="ethWallet" placeholder="Your ETH address*" value="" id="UserPassword" required="required" type="text"> </div>
+                    <div class="text">
+                        <div class="hold-cap">
+                            <div class="g-recaptcha" data-sitekey="" ></div>
+                        </div>
                     </div>
-                </div>
-                <div class="text">
-                    <input class="btn-login button" type="submit" value="Login" />
-                </div>
-            </fieldset>
-        </form>
+                    <div class="text">
+                        <input class="btn-login button" type="submit" value="Login" />
+                    </div>
+                </fieldset>
+            </form>
     </div>
     <div class="modal login" id="login11">
         <a class="close" href="#">close</a>

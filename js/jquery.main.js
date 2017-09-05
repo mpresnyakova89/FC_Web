@@ -21,7 +21,7 @@ function initLogin() {
 		var hold = $(this);
 		var login = hold.find('.btn-login');
 		var error = hold.find('.error-login');
-		var input = hold.find('input[type="text"], input[type="text"]');
+		var input = hold.find('input[type="text"], input[type="password"]');
 
 		login.click(function() {
 			$.ajax({
@@ -193,6 +193,7 @@ var pageInit = {
             this.galFade();
             this.team();
             this.press();
+			this.galPartners();
         },
         press: function () {
             $('body').each(function () {
@@ -288,6 +289,24 @@ var pageInit = {
                     effect: 'transparent',
                     autoHeight: true,
                     elements: '.gallery-holder > ul > li'
+                });
+
+                $(window).resize(function () {
+                    if (_time) clearTimeout(_time);
+                    _time = setTimeout(function () {
+                        gal.gallery('rePosition');
+                    }, 300);
+                });
+            });
+        },
+        galPartners: function () {
+            $('body').each(function () {
+                var hold = $(this);
+                var gal = hold.find('.gallery-partners');
+                var _time;
+
+                gal.gallery({
+                    flexible: true
                 });
 
                 $(window).resize(function () {

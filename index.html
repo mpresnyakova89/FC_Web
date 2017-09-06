@@ -71,7 +71,7 @@
                             <li><span class="sec"></span></li>
                         </ul>
                         <div class="holder-button">
-                            <a class="btn simplebox" href="#join"><span>remind me</span></a>
+                            <a class="btn simplebox hidden" href="#join"><span>remind me</span></a>
                             <a class="btn order simplebox" href="#preorder"><span>pre-order now</span></a>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                         </li>
                     </ul>
                     <div class="holder-download">
-                        <a class="link-download" href="white-paper.pdf" target="_blank"><i class="fa fa-file-o" aria-hidden="true"></i> WHITEPAPER</a>
+                        <a class="btn link-download" href="white-paper.pdf" target="_blank"><i class="fa fa-file-o" aria-hidden="true"></i><span>WHITEPAPER</span></a>
                         <a class="link-download hidden" href="#"><i class="fa fa-file-o" aria-hidden="true"></i> Lowestoft Fund Presentation</a>
                     </div>
                 </div>
@@ -684,7 +684,7 @@
                             <div class="in price">
                                 <strong class="title">TOKEN <br />DENOMINATION</strong>
                                 <p>1 FND = €1EUR</p>
-                                <span class="include-price">1 FNDC = €1 EUR</span>
+                                <span class="include-price">1 FND = €1 EUR</span>
                             </div>
                         </li>
                         <li class="white new">
@@ -1126,6 +1126,14 @@
                             financing to entrepreneur-led technology companies in sectors where we have domain expertise, relationships and experience to add value. </p>  -->
                     </div>
                 </li>
+                <li>
+                    <div class="in">
+                        <figure><a href="http://lngcapital.com/" target="_blank"><img src="images/logo-lng.png" alt="image" /></a></figure>
+                        <strong class="title">LNG CAPITAL</strong>
+<!--                        <p>Michaelson Capital provides customized growth 
+                            financing to entrepreneur-led technology companies in sectors where we have domain expertise, relationships and experience to add value. </p>  -->
+                    </div>
+                </li>
             </ul>
 <!--</div>
 				<a href="#" class="link-prev">prev</a>
@@ -1138,7 +1146,74 @@
             <div class="holder-text">
                 <h5>press coverage</h5>
             </div>
-            <div class="gallery-press">
+            <ul class="list-partners">
+                 <li>
+                     <div class="in">
+                         <figure>
+                             <a target="_blank" href="https://www.coinspeaker.com/2017/08/08/finles-capital-targets-e100m-fundcoin-ico-first-ever-private-equity-fund-backed-offering/">
+                                 <img src="images/Coinspeaker.png" alt="image" />
+                             </a>
+                         </figure>
+                     </div>
+                </li>
+                <li>
+                     <div class="in">
+                         <figure>
+                             <a target="_blank" href="https://www.privateequityinternational.com/news/global/2017-08-09/finles-targets-%E2%82%AC100m-through-cryptocurrency-launch/">
+                                                <img src="images/Private-Equity-International.jpg" alt="image" />
+                                            </a>
+                         </figure>
+                     </div>
+                </li>
+                <li>
+                     <div class="in">
+                         <figure>
+                             <a target="_blank" href="https://www.financemagnates.com/cryptocurrency/news/dutch-fund-manager-finles-capital-plans-e100-million-ico-fundcoin/">
+                                                <img src="images/FM_logo.png" alt="image" />
+                                            </a>
+                         </figure>
+                     </div>
+                </li>
+                <li>
+                     <div class="in">
+                         <figure>
+                             <a target="_blank" href="http://www.finsmes.com/2017/08/finles-capital-targets-e100m-fundcoin-ico-in-private-equity-fund-backed-offering.html">
+                                                <img src="images/Logo-1x.png" alt="image" />
+                                            </a>
+                         </figure>
+                     </div>
+                </li>
+                <li>
+                     <div class="in">
+                         <figure>
+                             <a target="_blank" href="http://www.fintech.finance/01-news/finles-capital-targets-e100m-fundcoin-ico-in-first-ever-private-equity-fund-backed-offering/">
+                                                <img src="images/Fintech-Finance-Horizontal-Invert-Alpha.png" alt="image" />
+                                            </a>
+                         </figure>
+                     </div>
+                </li>
+                <li>
+                     <div class="in">
+                         <figure>
+                             <a target="_blank" href="http://www.penews.com/today/index/content/4076684868/restricted">
+                                                <img src="images/down_jones_logo.jpg" alt="image" />
+                                            </a>
+                         </figure>
+                     </div>
+                </li>
+                <li>
+                     <div class="in">
+                         <figure>
+                             <a target="_blank" href="https://coinidol.com/fundcoin-ico-backed-by-investments-in-a-private-equity-fund/">
+                                                   <span class="wrap-pic">
+                                                    <img src="images/logo-press.jpg" alt="image" />
+                                                </span>
+                                            </a>
+                         </figure>
+                     </div>
+                </li>
+            </ul>
+<!--            <div class="gallery-press">
                 <div class="fake"></div>
                 <a href="#" class="link-prev">prev</a>
                 <a href="#" class="link-next">next</a>
@@ -1239,7 +1314,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div>-->
         </div>
         <!--  press-page end -->
         <div class="clock-holder">
@@ -1411,9 +1486,9 @@
         <form action="#" id="preorder-form" novalidate="novalidate" class="inner js_preorderForm form">
             <div id="preorder-success"></div>
             <div id="preorder-form-fields">
-                <div class="text"><input type="email" id="js_email" name="email" class="js_emailInput text-input" value="" placeholder="Your email" /></div>
-                <div class="text"><input type="text" class="text-input" id="eth_wallet" name="ethWallet" value="" placeholder="Your ETH address*" /></div>
-                <p style="font-size:small">*(this address will be used to deposit your FND and for registering your investment account).</p>
+                <div class="text"><input type="email" id="js_email" name="User[email]" class="js_emailInput text-input" value="" placeholder="Email" /></div>
+                <div class="text"><input type="text" class="text-input" id="eth_wallet" name="User[newPassword]" value="" placeholder="Password" /></div>
+                <!--<p style="font-size:small">*(this address will be used to deposit your FND and for registering your investment account).</p>-->
                 <dl>
                     <dt>IMPORTANT:</dt>
                     <dd>We don’t accept funds transferred via  <strong>Ethereum Wallet by Freewallet or Coinbase Ethereum Wallet</strong>. We recommend using <a href="https://jaxx.io/" target="_blank">Jaxx Blockchain Wallet</a> or <a href="https://www.myetherwallet.com/" target="_blank">MyEtherWallet.com</a> instead.</dd>
@@ -1763,10 +1838,10 @@
     <div class="modal login" id="login">
         <a class="close" href="#">close</a>
         <strong class="title">Login to existing account</strong>
-         <form class="form form-login" action="https://preorder.finles.capital/preorder/open" id="UserLoginForm" method="post" accept-charset="utf-8">
+         <form class="form form-login" action="https://ico.finles.capital/user/login" id="UserLoginForm" method="post" accept-charset="utf-8">
                 <fieldset>
-                    <div class="text"><input name="email" placeholder="Email" maxlength="256" id="UserUsername" required="required" type="text"></div>
-                    <div class="text"><input name="ethWallet" placeholder="Your ETH address*" value="" id="UserPassword" required="required" type="text"> </div>
+                    <div class="text"><input name="LoginForm[email]" placeholder="Email / Username" maxlength="256" id="UserUsername" required="required" type="text"></div>
+                    <div class="text"><input name="LoginForm[password]" placeholder="Password*" value="" id="UserPassword" required="required" type="password"> </div>
                     <div class="text">
                         <div class="hold-cap">
                             <div class="g-recaptcha" data-sitekey="" ></div>
@@ -1778,7 +1853,7 @@
                 </fieldset>
             </form>
     </div>
-    <div class="modal login" id="login11">
+<!--    <div class="modal login" id="login11">
         <a class="close" href="#">close</a>
         <strong class="title">Login to existing account</strong>
         <form class="form form-login" action="/login" id="UserLoginForm" method="post" accept-charset="utf-8">
@@ -1798,7 +1873,7 @@
                 </div>
             </fieldset>
         </form>
-    </div>
+    </div>-->
     <div class="modal login" id="password">
         <a class="close" href="#">close</a>
         <strong class="title">Password recovery</strong>
@@ -1859,7 +1934,7 @@
             }
 
             function registerUser(data) {
-                $.post('https://preorder.finles.capital/preorder/register', data, function (response) {
+                $.post('https://ico.finles.capital/user/register', data, function (response) {
                     if (response.success === true) {
                         $(SELECTORS.PREORDER_FORM_FIELDS).hide();
                         $(SELECTORS.PREORDER_SUCCESS_FIELD).show();

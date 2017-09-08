@@ -1068,3 +1068,11 @@ form  fieldset{
 	}
 	.gallery-partners{padding:0 34px;}
 }*/
+/*08.09.2017*/
+.login .order {
+ position:relative;
+ right:auto;
+ top:auto;
+ margin:0 auto 10px;
+ display:block;
+}

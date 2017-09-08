@@ -49,8 +49,8 @@
             <header id="header">
                 <strong class="logo"></strong>
                 <div class="holder-botton">
-                    <a class="order" href="https://ico.finles.capital/user/register" target="_blank">pre-order now</a>
-					<a class="order" href="https://ico.finles.capital/user/account">Login/Register</a>
+                    <a class="order simplebox" href="#preorder" target="_blank">pre-order now</a>
+					<a class="order simplebox" href="#login">Login/Register</a>
                 </div>                
             </header>
             <div class="container">
@@ -73,7 +73,7 @@
                         </ul>
                         <div class="holder-button">
                             <a class="btn simplebox hidden" href="#join"><span>remind me</span></a>
-                            <a class="btn order" href="https://ico.finles.capital/user/register" target="_blank"><span>pre-order now</span></a>
+                            <a class="btn order simplebox" href="#preorder"><span>pre-order now</span></a>
                         </div>
                     </div>
                     <div class="holder-link hidden">
@@ -131,8 +131,8 @@
                     <li><a href="#partners">PARTNERS</a></li>
                     <li><a href="#press">PRESS</a></li>
                     <li class="mob-link"><a class="btn link-download" href="white-paper.pdf" target="_blank">WHITE PAPER</a></li>
-                    <li class="mob-link"><a href="https://ico.finles.capital/user/login" target="_blank">LOGIN</a></li>
-                    <li class="mob-link"><a href="https://ico.finles.capital/user/register" target="_blank">PRE-ORDER/ORDER</a></li>
+                    <li class="mob-link"><a class="btn simplebox"  href="#login">LOGIN</a></li>
+                    <li class="mob-link"><a class="btn simplebox"  href="#preorder">PRE-ORDER/ORDER</a></li>
                     
                 </ul>
             </nav>
@@ -1468,7 +1468,7 @@
         <a class="close" href="#">close</a>
         <div class="box-head">
             <strong class="title">Finles Capital Platform Pre-Order</strong>
-            <a class="order simplebox" href="#login">login</a>
+            <!--<a class="order simplebox" href="#login">login</a>-->
         </div>
         <p>To participate in the Pre-Order, kindly complete the registration procedure. Please, indicate the ETH address to deposit your FND tokens after token distribution period. During the Pre-Order, we will accept the following currencies: Ethereum, Bitcoin, Litecoin and other currencies supported by the Platform.</p>
         <p>After completing the registration you will receive an email with instructions on how to proceed with Pre-Ordering; this email will include the ETH/BTC/LTC addresses for where the pre-order contributions should be sent.</p>
@@ -1490,8 +1490,8 @@
         <form action="#" id="preorder-form" novalidate="novalidate" class="inner js_preorderForm form">
             <div id="preorder-success"></div>
             <div id="preorder-form-fields">
-                <div class="text"><input type="email" id="js_email" name="User[email]" class="js_emailInput text-input" value="" placeholder="Email" /></div>
-                <div class="text"><input type="text" class="text-input" id="eth_wallet" name="User[newPassword]" value="" placeholder="Password" /></div>
+                <div class="text"><input type="email" id="js_email" name="User[email]" class="js_emailInput text-input" value="" required="required" placeholder="Email" /></div>
+                <div class="text"><input type="password" class="text-input" id="eth_wallet" name="User[newPassword]" value="" required="required" placeholder="Password" /></div>
                 <dl>
                     <dt>IMPORTANT:</dt>
                     <dd>We don’t accept funds transferred via  <strong>Ethereum Wallet by Freewallet or Coinbase Ethereum Wallet</strong>. We recommend using <a href="https://jaxx.io/" target="_blank">Jaxx Blockchain Wallet</a> or <a href="https://www.myetherwallet.com/" target="_blank">MyEtherWallet.com</a> instead.</dd>
@@ -1765,8 +1765,7 @@
                 </div>					
                 <div id="preorder-error"></div>
                 <div class="text">
-                    <div class="hold-cap">
-                        <div class="g-recaptcha" data-sitekey="" ></div>
+                    <div class="g-recaptcha" data-sitekey="6LdscSwUAAAAADXnk_8S0GEA7lcdlRfY1uN3CPeJ" data-callback="onSubmit" data-size="invisible">
                     </div>
                 </div>
                 <div class="text">
@@ -1832,7 +1831,7 @@
             </fieldset>
         </form>
     </div>
-    <div class="modal login" id="password">
+<!--    <div class="modal login" id="password">
         <a class="close" href="#">close</a>
         <strong class="title">Password recovery</strong>
         <form class="form" action="https://preorder.finles.capital/preorder/forgotpassword" id="UserForgotpasswordForm" method="post" accept-charset="utf-8">
@@ -1843,7 +1842,7 @@
                 </div>
             </fieldset>
         </form>
-    </div>
+    </div>-->
 
     <link rel="stylesheet" href="css/font-awesome.min.css" media="all" />
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
@@ -1935,14 +1934,13 @@
 
             $('.js_preorderForm').validate({
                 ignore: "",
-                rules: {
-                    ethWallet: {
-                        ethWallet: true,
-                        ethWalletStartsFrom: true,
-                    },
+                rules: {                    
                     email: {
                         required: true,
                         email: true
+                    },
+                    pssword: {
+                        required: true
                     },
                     citizenCheckbox: {
                         required: true,
@@ -1951,8 +1949,7 @@
                         country: true,
                     }
                 },
-                messages: {
-                    ethWallet: 'ETH wallet must have the format "0x..."&nbsp;(40digits)',
+                messages: {                   
                     email: {
                         required: "Please specify your email address",
                         email: "Please confirm that you email is correct"

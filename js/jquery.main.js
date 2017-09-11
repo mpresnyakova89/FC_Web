@@ -1,4 +1,4 @@
-jQuery(document).ready(function () {
+$(window).on('load',function () {
     pageInit.init();
     OpenBox({
         wrap: '#nav',
@@ -135,7 +135,7 @@ function scrollBox() {
         }
         time = setTimeout(function () {
             list.each(function () {
-                if ($(window).scrollTop() > $($(this).attr('href')).offset().top - 50 - nav.innerHeight()) {
+                if ($(window).scrollTop() > $($(this)).offset().top - 50 - nav.innerHeight()) {
                     active = $(this).attr('href');
                 }
             });

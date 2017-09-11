@@ -92,7 +92,7 @@ function checkHash() {
 }
 
 function scrollBox() {
-    var list = $('.menu li a');
+    var list = $('.menu li:not(.mob-link) a');
     var box = $('.section');
     var activeText = $('.active-menu');
     var li = $('.menu li');
@@ -135,7 +135,7 @@ function scrollBox() {
         }
         time = setTimeout(function () {
             list.each(function () {
-                if ($(window).scrollTop() > $($(this)).offset().top - 50 - nav.innerHeight()) {
+                if ($(window).scrollTop() > $($(this).attr('href')).offset().top - 50 - nav.innerHeight()) {
                     active = $(this).attr('href');
                 }
             });
@@ -268,7 +268,7 @@ var pageInit = {
                     }, 300);
                 });
             });
-        },
+        }
        /* galPartners: function () {
             $('body').each(function () {
                 var hold = $(this);

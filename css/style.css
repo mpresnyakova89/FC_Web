@@ -253,7 +253,7 @@ ul {
 }
 ul li {
 	padding: 0;
-	background: url(../images/bull.gif) no-repeat 0 0;
+	//background: url(../images/bull.gif) no-repeat 0 0;
 }
 address {
 	display: block;
@@ -2983,10 +2983,10 @@ address {
  
  /*11.09.2017*/ 
 .main-page .list-net .fa {
- height: 90px;
- line-height: 90px;
- width: 90px;
- font-size: 40px;
+ height: 65px;
+ line-height: 65px;
+ width: 65px;
+ font-size: 35px;
 }
 .contact-page .list-net .fa {font-size: 20px;}
 .list-partners figure img {border:1px solid #30435e;}
@@ -3006,6 +3006,17 @@ address {
 	-o-background-size: cover;
 	-moz-background-size: cover;
 }
+.clock-holder .holder-button .btn span {
+ display:inline-block;
+ vertical-align:top;
+}
+.clock-holder .holder-button {margin:0 0 58px;}
+.clock-holder .holder-button .btn .fa {margin:0 10px 0 0;}
+.clock-holder .holder-button .btn {
+ margin:0 0 10px;
+ min-width:300px;
+}
+.info-page {padding:250px 0 80px;}
 @media (max-width: 768px) {
  .main-page .list-net .fa {
   height: 60px;
@@ -3022,5 +3033,10 @@ address {
   font-size: 13px;
  }
  .contact-page .list-net .fa {font-size: 15px;}
+ .clock-holder .holder-button .btn {
+  margin:0 0 10px;
+  min-width:200px;
+ }
+ .clock-holder .holder-button {margin:0 0 40px;}
 }
 .grecaptcha-badge { display: none !important; }

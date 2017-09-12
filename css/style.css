@@ -3040,3 +3040,16 @@ address {
  .clock-holder .holder-button {margin:0 0 40px;}
 }
 .grecaptcha-badge { display: none !important; }
+@media (max-width: 550px) {
+ #header {padding:25px !important;}
+ .main-page .main-logo {margin:10px auto 40px;}
+ .list-partners li {
+  width:49% !important;
+  display:inline-block !important;
+  vertical-align:top !important;
+ }
+ .list-partners figure img {
+  max-width:130px !important;
+ }
+ .list-partners .title {font:12px/15px "Conv_gotham-pro-medium",arial,helvetica,sans-serif !important;}
+}

@@ -808,50 +808,50 @@
                                         </div>
                                     </div>
                                 </li>
-<!--                                <li>
-                                    <div class="box">
-                                        <div class="in">
-                                            <div class="holder">
-                                                <span class="figure">
-                                                    <img src="images/MARK_E_BOERSTRA.png" alt="image" />
-                                                </span>
-                                                <div class="holder-text">
-                                                    <strong class="title">Mark E. Boerstra</strong>
-                                                    <strong class="profile">Member Non-Executive Supervisory Board</strong>
-                                                </div>
-                                                <div class="holder-content">
-                                                    <p>From 2000–2011, Mr. Boerstra was the Managing Partner 
-                                                        of Attica Holding BV. Attica Holding BV offered fundand 
-                                                        asset management services to private and institutional 
-                                                        investors. </p>
-                                                </div>
-                                                <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/mark-boerstra-548b4a12a/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>-->
-<!--                                <li>
-                                    <div class="box">
-                                        <div class="in">
-                                            <div class="holder">
-                                                <span class="figure">
-                                                    <img src="images/GERT_M_JOCHEMS.png" alt="image" />
-                                                </span>
-                                                <div class="holder-text">
-                                                    <strong class="title">Gert M. Jochems</strong>
-                                                    <strong class="profile">Member Non-Executive Supervisory Board</strong>
-                                                </div>
-                                                <div class="holder-content">
-                                                    <p>Currently, Mr. Jochems is the Chairman of the Board of 
-                                                        FM Conduct, which he founded in 2006. FM Conduct offers 
-                                                        services in the area of compliance and integrity issues 
-                                                        to a broad professional customer base. </p>
-                                                </div>
-                                                <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/gertjochems/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>-->
+                                <!--                                <li>
+                                                                    <div class="box">
+                                                                        <div class="in">
+                                                                            <div class="holder">
+                                                                                <span class="figure">
+                                                                                    <img src="images/MARK_E_BOERSTRA.png" alt="image" />
+                                                                                </span>
+                                                                                <div class="holder-text">
+                                                                                    <strong class="title">Mark E. Boerstra</strong>
+                                                                                    <strong class="profile">Member Non-Executive Supervisory Board</strong>
+                                                                                </div>
+                                                                                <div class="holder-content">
+                                                                                    <p>From 2000–2011, Mr. Boerstra was the Managing Partner 
+                                                                                        of Attica Holding BV. Attica Holding BV offered fundand 
+                                                                                        asset management services to private and institutional 
+                                                                                        investors. </p>
+                                                                                </div>
+                                                                                <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/mark-boerstra-548b4a12a/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>-->
+                                <!--                                <li>
+                                                                    <div class="box">
+                                                                        <div class="in">
+                                                                            <div class="holder">
+                                                                                <span class="figure">
+                                                                                    <img src="images/GERT_M_JOCHEMS.png" alt="image" />
+                                                                                </span>
+                                                                                <div class="holder-text">
+                                                                                    <strong class="title">Gert M. Jochems</strong>
+                                                                                    <strong class="profile">Member Non-Executive Supervisory Board</strong>
+                                                                                </div>
+                                                                                <div class="holder-content">
+                                                                                    <p>Currently, Mr. Jochems is the Chairman of the Board of 
+                                                                                        FM Conduct, which he founded in 2006. FM Conduct offers 
+                                                                                        services in the area of compliance and integrity issues 
+                                                                                        to a broad professional customer base. </p>
+                                                                                </div>
+                                                                                <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/gertjochems/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>-->
                                 <li>
                                     <div class="box">
                                         <div class="in">
@@ -1386,7 +1386,7 @@
                             </li>
                         </ul>
                         <ul class="list-net">
-                            
+
                             <li>
                                 <a target="_blank" href="https://twitter.com/FundCoins"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                 <a target="_blank" href="https://twitter.com/FundCoins">Twitter</a>
@@ -1997,7 +1997,14 @@
                 });
             });
         });
-
+        $('a').on('click', function () {
+            var link = $(this).attr("href");
+            if ((link == 'https://ico.finles.capital/user/register') || (link == 'https://ico.finles.capital/user/login')) {
+                link = link + (document.location.search.substr(1).length ? '?' + document.location.search.substr(1) : '');
+                document.location = link;
+                return false;
+            }
+        });
 
         /*var onloadCallback = function () {
          var divcaptcha = document.getElementsByClassName('g-recaptcha');

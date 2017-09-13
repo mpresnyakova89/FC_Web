@@ -2509,7 +2509,7 @@ address {
 	.whay-page .list li {
 		width:100%;
 	}
-	.holder-line-r {
+	/*.holder-line-r {
 		padding: 100px 20px 100px 0;
 	}
 	.holder-line-r .box-line {
@@ -2524,12 +2524,13 @@ address {
 	.holder-line-r .in-line {
 		height: 4px;
 		margin: -2px 0 0;
-	}
+	}*/
 	.contact-page address {margin:0;}
 	.holder-line-r .text-bottom,
 	.holder-line-r .text-top {
 		left: -20px;
 	}
+	
 	/*.holder-line-r .box-line-4 {
 		right: -19px;
 		padding: 0;
@@ -3052,4 +3053,199 @@ address {
   max-width:130px !important;
  }
  .list-partners .title {font:12px/15px "Conv_gotham-pro-medium",arial,helvetica,sans-serif !important;}
+}
+ /*13.09.2017*/ 
+.gallery-equity .hold-switcher a.link-prev,
+.gallery-equity .hold-switcher a.link-next {display:none;}
+@media (max-width: 750px) {
+	.gallery-equity .switcher {
+		overflow:hidden;
+		font:17px/20px "Conv_gotham-pro-medium",arial,helvetica,sans-serif;
+	}
+	.gallery-equity .switcher {white-space:normal;}
+	.gallery-equity .switcher a:after,
+	.hold-switcher:after, 
+	.hold-switcher:before,
+	.gallery-equity .switcher li:after	{display:none;}
+	.gallery-equity .switcher li {
+		width:24%;
+		padding:0 5px;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		text-align:center;
+		vertical-align:middle;
+	}
+	.gallery-equity .gallery-holder {padding:0 70px;}
+	.gallery-equity a.link-prev {left:10px;}
+	.gallery-equity a.link-next {right:10px;}
+	/*timeline*/
+	.holder-line-r .box-line-1,
+	.holder-line-r .box-line-2,
+	.holder-line-r .box-line-3,
+	.holder-line-r .box-line-4,
+	.holder-line-r .box-line-5,
+	.holder-line-r .box-line-6 {width:30px !important;}
+	.holder-line-r .box-line {
+		float:none;
+		height:200px;
+		width:30px;
+	}
+	.holder-line-r .box-line {padding:30px 0 0 0;}
+	.holder-line-r .bull {margin:-30px 0 0 0;}
+	.holder-line-r .in-line {
+		height:170px;
+		width:8px;
+		left:50%;
+		margin:0 0 0 -4px;
+	}
+	.holder-line-r .box-line-6 .bull {margin:0;}
+	.holder-line-r .box-line-6 {
+		position:relative !important;
+		right:auto !important;
+		left:auto !important;
+	}
+	.holder-line-r .box-line-1 .text-top,
+	.holder-line-r .text-top,
+	.holder-line-r .box-line-1 .text-top, 
+	.holder-line-r .box-line-3 .text-top, 
+	.holder-line-r .box-line-5 .text-top	{
+		left:68px !important;
+		margin:0 !important;
+	}
+	.holder-line-r .help-b {
+		padding:0 0 0 37%;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+	.holder-line-r .box-line-1 .text-top,
+	.holder-line-r .box-line-2 .text-top,
+	.holder-line-r .box-line-3 .text-top,
+	.holder-line-r .box-line-4 .text-top,
+	.holder-line-r .box-line-5 .text-top  {top:-44px !important;}
+	.holder-line-r .box-line-5 .text-top {text-align:left !important;}
+	.holder-line-r .box-line-6 .text-top {top:157px !important;}
+	.holder-line-r {padding:59px 0 80px !important;}
+	.holder-line-r {
+		min-width:100% !important;
+	}
+	.holder-line-r .text-top:not(.hide) {
+		font-size:32px !important;
+		line-height:60px !important;
+	}
+	.holder-line-r .hide {
+		font-size:17px !important;
+		line-height:27px !important;
+	}
+	.hold-switcher {
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		padding:0 60px;
+	}
+	.gallery-equity .switcher a {padding:0;}
+	.gallery-equity .hold-switcher a.link-prev,
+	.gallery-equity .hold-switcher a.link-next {
+		position: absolute;
+		top: 50%;
+		left: 40px;
+		background: url(../images/arrow-prev.png) no-repeat 0 0;
+		width: 12px;
+		height: 35px;
+		margin: -17px 0 0;
+		text-indent: -9999px;
+		overflow: hidden;
+		z-index: 100;
+		display:block;
+	}
+	.gallery-equity .hold-switcher a.link-next {
+		left: auto;
+		right: 40px;
+		background: url(../images/arrow-next.png) no-repeat 0 0;
+	}
+}
+@media (max-width: 700px) {
+	.gallery-equity a.link-prev, 
+	.gallery-equity a.link-next {display:block;}
+	.gallery-equity .gallery-holder {padding:0 50px;}
+	.gallery-equity .switcher {font:15px/20px "Conv_gotham-pro-medium",arial,helvetica,sans-serif;}
+	.hold-switcher {margin:0 0 40px;}
+}
+@media (max-width: 600px) {
+	.gallery-equity .hold-switcher a.link-prev, 
+	.gallery-equity .hold-switcher a.link-next {left:10px;}
+	.gallery-equity .hold-switcher a.link-next {
+		left: auto;
+		right: 10px;
+	}
+	.hold-switcher {padding:0 30px;}
+	.gallery-equity .switcher {font:12px/20px "Conv_gotham-pro-medium",arial,helvetica,sans-serif;}
+}
+@media (max-width: 550px) {
+	.gallery-equity a.link-prev, 
+	.gallery-equity a.link-next {
+		background-size: cover;
+		-webkit-background-size: cover;
+		-o-background-size: cover;
+		-moz-background-size: cover;
+		height:81px;
+		width:25px;
+		margin:-40px 0 0 0;
+	}
+	.gallery-equity .gallery-holder {padding:0 25px;}
+	.holder-line-r .help-b {padding:0 0 0 30%;}
+	.holder-line-r .in-line {height:121px;}
+	.holder-line-r .box-line {height:150px;}
+	.holder-line-r .box-line-6 .text-top {top:120px !important;}
+	.holder-line-r .text-top:not(.hide) {
+		font-size:25px !important;
+		line-height:35px !important;
+	}
+	.holder-line-r .box-line-1 .text-top,
+	.holder-line-r .box-line-2 .text-top,
+	.holder-line-r .box-line-3 .text-top,
+	.holder-line-r .box-line-4 .text-top,
+	.holder-line-r .box-line-5 .text-top  {top:-35px !important;}
+	.holder-line-r .box-line-6 .text-top {top:118px !important;}
+}
+@media (max-width: 500px) {
+	.oferig-page .list li:nth-child(7) {
+		background:#08d9ff;
+		color:#30435e;
+	}
+	.oferig-page .in.price .include-price{color:#30435e !important;}
+	.gallery-equity .text-in {
+		top:-1px;
+		font:18px/24px "Conv_gotham-pro-bold",arial,helvetica,sans-serif;
+	}
+}
+@media (max-width: 450px) {
+	.gallery-equity a.link-prev {left:-5px;}
+	.gallery-equity a.link-next {right:-5px;}
+	.gallery-equity .gallery-holder {padding:0 10px;}
+	.holder-line-r .help-b {padding:0 0 0 50px;}
+	.holder-line-r .hide {
+		font-size:14px !important;
+		line-height:20px !important;
+	}
+	.holder-line-r .text-top:not(.hide) {
+		font-size:18px !important;
+		line-height:30px !important;
+	}
+	.gallery-equity .hold-switcher a.link-prev, 
+	.gallery-equity .hold-switcher a.link-next  {left:-5px;}
+	.gallery-equity .hold-switcher a.link-next {
+		left: auto;
+		right: -5px;
+	}
+	.hold-switcher {padding:0 10px;}
+	.gallery-equity .switcher li {
+		width:48%;
+		margin:0 0 10px;
+	}
+	.gallery-equity .switcher {font:12px/17px "Conv_gotham-pro-medium",arial,helvetica,sans-serif;}
 }

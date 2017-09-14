@@ -258,6 +258,7 @@ var pageInit = {
                     switcher: '.switcher > li',
                     effect: 'transparent',
                     autoHeight: true,
+                    touch: false,
                     elements: '.gallery-holder > ul > li'
                 });
 

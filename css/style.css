@@ -3259,3 +3259,67 @@ address {
  }
  .main-page .list-net li {margin:0 8px;}
 }
+.contact-page .box:last-child {width:100%; text-align:center;}
+.contact-page .holder-list .list-net,
+.contact-page .holder-list .list-net:first-child {
+ float:none;
+ width:100%;
+ text-align:center;
+ display:block;
+}
+.contact-page .holder-list .list-net li a:last-child {display:none;}
+.contact-page .holder-list .list-net li {
+ display:inline-block;
+ vertical-align:top;
+ margin:0 20px 10px;
+}
+.contact-page .list-net .fa {
+ font-size:35px;
+ height:65px;
+ line-height:65px;
+ width:65px;
+}
+.contact-page .holder-list .list-net li a {
+ position:relative;
+ -webkit-transition: opacity 0.2s ease-in-out;
+ -moz-transition: opacity 0.2s ease-in-out;
+ -ms-transition: opacity 0.2s ease-in-out;
+ -o-transition: opacity 0.2s ease-in-out;
+ transition: opacity 0.2s ease-in-out;
+ opacity:1;
+}
+.contact-page .holder-list .list-net li a:hover {opacity:0.8;}
+.contact-page h6 {text-align:center;}
+@media (max-width: 1100px) {
+ .contact-page .list-net li {
+  display:inline-block;
+  width:auto;
+ }
+}
+@media (max-width: 768px) {
+ .contact-page .list-net .fa {
+  height: 60px;
+  line-height: 60px;
+  width: 60px;
+  font-size: 30px;
+ }
+ .contact-page .holder-list .list-net li {margin:0 10px 10px;}
+ .contact-page .holder {padding:0 20px;}
+}
+@media (max-width: 600px) {
+ .contact-page .list-net .fa {
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  font-size: 30px;
+ }
+}
+@media (max-width: 480px) {
+ .contact-page .list-net .fa {
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  font-size: 25px;
+ }
+ .contact-page .holder-list .list-net li {margin:0 5px 5px;}
+}

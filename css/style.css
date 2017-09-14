@@ -3249,3 +3249,13 @@ address {
 	}
 	.gallery-equity .switcher {font:12px/17px "Conv_gotham-pro-medium",arial,helvetica,sans-serif;}
 }
+/*14.09.2017*/ 
+@media (max-width: 550px){
+ .main-page .list-net .fa {
+  height: 35px;
+  line-height: 35px;
+  width: 35px;
+  font-size: 20px;
+ }
+ .main-page .list-net li {margin:0 8px;}
+}

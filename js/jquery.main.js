@@ -163,7 +163,7 @@ var pageInit = {
             this.galFade();
             this.team();
             this.press();
-			this.advisors();
+//			this.advisors();
 //			this.galPartners();
         },
         press: function () {
@@ -292,7 +292,7 @@ var pageInit = {
                 all();
             });
         },
-		advisors: function () {
+/*		advisors: function () {
             $('body').each(function () {
                 var hold = $(this);
                 var gal = hold.find('.gallery-advisors');
@@ -334,7 +334,7 @@ var pageInit = {
                 $(window).resize(all);
                 all();
             });
-        },
+        },*/
         galFade: function () {
             $('body').each(function () {
                 var hold = $(this);

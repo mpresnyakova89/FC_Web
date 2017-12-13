@@ -324,7 +324,7 @@ address {
 	margin: 0 auto;
 	max-width: 1040px;
 	padding: 0 20px;
-	text-align: center;
+	text-align: justify;
 }
 .main-page {
 	overflow: hidden;
@@ -733,8 +733,18 @@ address {
 	margin:0 0 10px;
 	font: 16px/19px 'Conv_gotham-pro-light', arial, helvetica, sans-serif;
 }
-.in-market li:before {	content:'';	position:absolute;	top:8px;	left:0px;	width: 5px;	height: 5px;	background: #fff;
-	-webkit-border-radius: 50%;	-moz-border-radius: 50%;	border-radius: 50%;}
+.in-market li:before {
+	content:'';
+	position:absolute;
+	top:8px;
+	left:0px;
+	width: 5px;
+	height: 5px;
+	background: #fff;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
 /*venture-page*/
 .venture-page {
 	background:#f7f8f9;
@@ -763,10 +773,18 @@ address {
 	margin:0 0 20px;
 	font: 16px/19px 'Conv_gotham-pro-light', arial, helvetica, sans-serif;
 }
-.graph li:before {	content:'';	position:absolute;	top:8px;	left:0;	width: 5px;	height: 5px;	background: #30435e;
+.graph li:before {
+	content:'';
+	position:absolute;
+	top:8px;
+	left:0;
+	width: 5px;
+	height: 5px;
+	background: #30435e;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
-	border-radius: 50%;}
+	border-radius: 50%;
+}
 .graph li span {font: 16px/19px 'Conv_gotham-pro-bold', arial, helvetica, sans-serif;}
 .picture {
 	width:100%;
@@ -779,12 +797,15 @@ address {
 }
 .picture .price {
 	width:50px;
-	position:absolute;	top:0px;	left:0;
+	position:absolute;
+	top:0px;
+	left:0;
 	height:100%;
 	margin:0 0 60px;
 }
 .picture .price li {
-	position:absolute;	right:0px;
+	position:absolute;
+	right:0px;
 }
 .picture .price li:nth-child(1) {bottom:1.5%;}
 .picture .price li:nth-child(2) {bottom:14.5%;}
@@ -801,7 +822,9 @@ address {
 }
 .hold-year.mob {display:none;}
 .hold-year li {
-	position:absolute;	top:0px;	left:0px;
+	position:absolute;
+	top:0px;
+	left:0px;
 }
 .hold-year li:nth-child(1) {left:5.5%}
 .hold-year li:nth-child(2) {left:17.5%}
@@ -927,7 +950,8 @@ address {
 .box-example li .text {
 	font: 16px/19px 'Conv_gotham-pro-regular', arial, helvetica, sans-serif;
 	margin:0 0 14px;
-	display:inline-block;	vertical-align:top;
+	display:inline-block;
+	vertical-align:top;
 }
 .box-example li .price {font: 15px/19px 'Conv_gotham-pro-bold', arial, helvetica, sans-serif;}
 .box-example .box-top,
@@ -939,11 +963,13 @@ address {
 .box-example .box-top,
 .box-example .box-bottom  {margin:0 0 25px;}
 .box-example .box-top li {
-	display:inline-block;	vertical-align:top;
+	display:inline-block;
+	vertical-align:top;
 	margin:0 20px;
 }
 .box-example .box-bottom li {
-	display:inline-block;	vertical-align:middle;
+	display:inline-block;
+	vertical-align:middle;
 	margin:0 10px;
 }
 .box-example .box-top .wrap-name,
@@ -952,7 +978,9 @@ address {
 	height:50px;
 	width:51px;
 	overflow:hidden;
-	-webkit-border-radius: 50%;	-moz-border-radius: 50%;	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
 	margin:0 auto 10px;
 }
 .box-example .box-top .wrap-name img {
@@ -1468,7 +1496,8 @@ address {
 	border-radius: 16px;
 	width: 62px;
 	height:62px;
-	font-size:35px;	line-height:62px;
+	font-size:35px;
+	line-height:62px;
 	text-align: center;
 	-webkit-transition: background .2s ease-in-out;
 	-moz-transition: background .2s ease-in-out;
@@ -2188,7 +2217,7 @@ form  fieldset{
 	margin:0 auto 10px;
 	display:block;
 }
-.main-page .main-logo {margin:58px auto 128px;}
+.main-page .main-logo {margin:58px auto 20px;}
 .clock-holder .holder-button .btn span {
 	display:inline-block;
 	vertical-align:top;
@@ -2737,7 +2766,8 @@ form  fieldset{
 	.whay-page .list p br {display:none;}
 	.img-box .holder-texts  {padding:0 90px 0 125px;}
 	.gallery-team .title {
-		font-size:45px;		line-height:51px;
+		font-size:45px;
+		line-height:51px;
 	}
 	.lowestoft-page {padding:63px 0 67px;}
 	.lowestoft-page .holder-pic {display:none;}
@@ -2805,7 +2835,8 @@ form  fieldset{
 		margin:0 auto;
 		padding:28px 0 29px;
 		width:428px;
-		font-size:25px;		line-height:25px;
+		font-size:25px;
+		line-height:25px;
 	}
 	.img-box p {margin:0 0 88px;}
 	.team-page {padding:53px 0 0 0;}
@@ -2864,15 +2895,18 @@ form  fieldset{
 		margin:0 0 24px;
 	 }
 	 .wrap-market .new-price {
-	 	font-size:80px;	 	line-height:80px;
+	 	font-size:80px;
+	 	line-height:80px;
 		margin:0 0 2px;
 	 }
 	 .wrap-market .new-text {
-	 	font-size:34px;	 	line-height:52px;
+	 	font-size:34px;
+	 	line-height:52px;
 		margin:0 0 30px -1px;
 	 }
 	 .in-market li {
-	 	font-size:28px;	 	line-height:49px;
+	 	font-size:28px;
+	 	line-height:49px;
 		margin:0;
 		padding:0 0 0 20px;
 	 }
@@ -2889,7 +2923,8 @@ form  fieldset{
 	 .wrap-market {padding:0 0 50px;}
 	 .in-market {margin:0 0 113px;}
 	 .venture-page h3 {
-	 	font-size:36px;	 	line-height:36px;
+	 	font-size:36px;
+	 	line-height:36px;
 		text-align:center;
 	 }
 	 .graph {
@@ -2898,16 +2933,19 @@ form  fieldset{
 	 }
 	 .graph li,
 	 .graph li span {
-	 	font-size:28px;	 	line-height:33px;
+	 	font-size:28px;
+	 	line-height:33px;
 	 }
 	 .venture-page .holder-text {padding:0 20px;}
 	 .picture .price li {
-	 	font-size:24px;	 	line-height:24px;
+	 	font-size:24px;
+	 	line-height:24px;
 	 }
 	 .portfolio-page h3,
 	 .lowestoft-page h5,
 	 .press-page h5 {
-	 	font-size:48px;	 	line-height:59px;
+	 	font-size:48px;
+	 	line-height:59px;
 	 }
 	 .portfolio-page .holder-text {padding:0 80px;}
 	 .box-example {margin:0;}
@@ -2924,10 +2962,12 @@ form  fieldset{
 	 .portfolio-page {background:#f7f8f9; }
 	 .box-example li .text,
 	 .box-example li .price {
-	 	font-size:29px;	 	line-height:31px;
+	 	font-size:29px;
+	 	line-height:31px;
 	 }
 	 .box-example .box-top .wrap-text {
-	 	font-size:27px;	 	line-height:33px;
+	 	font-size:27px;
+	 	line-height:33px;
 	 }
 	 .box-example .box-top .wrap-name {
 	 	height:94px;
@@ -2935,7 +2975,8 @@ form  fieldset{
 	 }
 	 .box-example li .text {margin:0 0 40px;}
 	 .gallery-team .gallery-holder ul {
-	 	font-size:23px;	 	line-height:41px;
+	 	font-size:23px;
+	 	line-height:41px;
 	 }
 	 .list-partners .in {max-width:100%;}
 	 .picture .wrap-img{display:none;}
@@ -3230,7 +3271,9 @@ form  fieldset{
 		line-height:40px;
 		width:40px;
 		font-size:25px;
-		-webkit-border-radius: 8px;		-moz-border-radius: 8px;		border-radius: 8px;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
 	}
 	#header .order {font:12px/35px "Conv_gotham-pro-bold",arial,helvetica,sans-serif;}
 	.holder-bg .bg:after {height:110%;}
@@ -3259,12 +3302,14 @@ form  fieldset{
 		line-height:31px;
 	}
 	.gallery-team .gallery-holder ul {
-		font-size:14px;		line-height:25px;
+		font-size:14px;
+		line-height:25px;
 	}
 	.graph {padding: 0 30px;}
 	.picture .price li,
 	.hold-year.mob li{
-		font-size:14px;		line-height:14px;
+		font-size:14px;
+		line-height:14px;
 	}
 	.picture .wrap-img.mob {
 		width:450px;
@@ -3340,7 +3385,8 @@ form  fieldset{
 	}
 	.graph {padding: 0;}
 	.main-page h1 {
-		font-size:36px;		line-height:40px;
+		font-size:36px;
+		line-height:40px;
 	}
 	.picture {padding: 0px 0 0 30px;}
 	.hold-year.mob {
@@ -3592,11 +3638,13 @@ form  fieldset{
 	.portfolio-page h3, 
 	.lowestoft-page h5, 
 	.press-page h5 {
-		font-size:24px;		line-height:30px;
+		font-size:24px;
+		line-height:30px;
 	}
 	.graph li {margin:0 0 10px;}
 	.picture .price li {
-		font-size:10px;		line-height:14px;
+		font-size:10px;
+		line-height:14px;
 	}
 	.portfolio-page {padding:70px 0 80px;}
 	.portfolio-page h4 {
@@ -3611,13 +3659,15 @@ form  fieldset{
 		height:45px;
 	}
 	.box-example .box-top .wrap-text {
-		font-size:14px;		line-height:14px;
+		font-size:14px;
+		line-height:14px;
 	}
 	.box-example > li {margin:0 0 20px;}
 	.box-example .box-top li,
 	.box-example .box-bottom li {margin:0 10px 10px;}
 	.contact-page h6 {
-		font-size:25px;		line-height:25px;
+		font-size:25px;
+		line-height:25px;
 		margin:0 0 25px;
 	}
 	.hold-year.mob {max-height:660px;}
@@ -3724,7 +3774,8 @@ form  fieldset{
 		line-height:15px;
 	}
 	.info-page h3 {
-		font-size:37px;		line-height:37px;
+		font-size:37px;
+		line-height:37px;
 	}
 	.info-page .list li {width:45%;}
 	.info-page .list .in {padding:5px;}
@@ -3816,7 +3867,8 @@ form  fieldset{
 		line-height:25px;
 	}
 	.img-box .join-now {
-		font-size:13px;		line-height:13px;
+		font-size:13px;
+		line-height:13px;
 	}
 	.box-example .box-top, 
 	.box-example .box-bottom {margin:0 0 12px;}
@@ -3841,7 +3893,8 @@ form  fieldset{
 		height:300px;
 	}
 	.gallery-team .gallery-holder ul {
-		font-size:13px;		line-height:19px;
+		font-size:13px;
+		line-height:19px;
 	}
 }
 @media (max-width: 450px) {
@@ -3907,7 +3960,8 @@ form  fieldset{
 	.gallery-advisors .in .holder {min-height:460px;}
 	.gallery-advisors .gallery-holder ul li {width:310px;}
 	.oferig-page .list {
-		font-size:12px;		line-height:13px;
+		font-size:12px;
+		line-height:13px;
 	}
 	.contact-page .box-bottom {padding:0 10px;}
 }
